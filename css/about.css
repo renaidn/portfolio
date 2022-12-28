@@ -1,0 +1,168 @@
+#about_window {
+  width: 640px;
+  height: 376px;
+  position: absolute;
+  /* margin-top: 80px; */
+  /* margin-left: 160px; */
+  top: 80px;
+  left: 160px;
+  background-color: #7541e4;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.about_fixed {
+  border-right: 1px solid black;
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+
+.about_icon {
+  width: 160px;
+  height: 160px;
+  border-radius: 200px;
+  background-color: #111;
+  background-image: url(/images/adina_about.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 16px 24px 12px 24px;
+  border: 1px solid black;
+}
+
+.about_fixed-text {
+  text-align: center;
+  margin: 0;
+}
+
+.about_fixed-text p {
+  margin: 4px;
+}
+
+#username {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "akira";
+  text-shadow: 1px 1px 0px var(--red);
+}
+
+.nav_horizontal {
+  /* position: absolute; */
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* background-color: pink; */
+  border-bottom: 1px solid black;
+  text-align: center;
+  height: 32px;
+  width: 100%;
+  margin: auto;
+}
+
+.nav_horizontal li {
+  /* color: #cdd0fe; */
+  line-height: 16px;
+  display: block;
+  /* text-align: right; */
+  padding: 8px 8px;
+  /* font-family: "ds-digital"; */
+  /* width: 100%;
+  text-align: right; */
+  /* margin: auto 8px; */
+  /* color: rgb(71, 5, 163); */
+  /* color: #918aef; */
+}
+
+.nav_horizontal li:hover {
+  color: var(--neongreen);
+  /* text-decoration: underline; */
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.about_content {
+  height: 100%;
+  width: auto;
+  overflow-y: scroll;
+  padding: 24px 32px;
+  /* background-color: #eff1ff; */
+  background-color: white;
+  line-height: 24px;
+}
+
+.about_content p {
+  padding: 0;
+  margin: 0;
+  color: black;
+  overflow-y: hidden;
+}
+
+#about_general {
+}
+
+#about_interests {
+  font-size: 24px;
+  line-height: 32px;
+  /* transition-duration: 0.3s; */
+}
+
+#about_interests:hover {
+  /* font-family: "akira"; */
+}
+
+#about_skills {
+  display: flex;
+  flex-direction: row;
+}
+
+#about_skills p{
+  font-size: 16px;
+}
+
+/* #skills_overview {
+  width: 100%;
+  background-color: aqua;
+} */
+
+#skills_name {
+  width: 70%;
+  line-height: 16px;
+  /* background-color: #7541e4; */
+}
+
+#skills_score {
+  width: 30%;
+  line-height: 16px;
+  background-color: aqua;
+  word-spacing: -10px;
+}
+
+#skills_score span {
+  color: black;
+  font-size: 16px;
+}
+
+#about_download-btn {
+  margin: 10px 0;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 4px 8px;
+  background-color: var(--neongreen);
+  color: rgb(11, 111, 0);
+  font-family: "outfit";
+}
+
+#about_download-btn:hover {
+  background-color: #d7ffe2;
+  /* font-weight: 800; */
+  border: 1px solid var(--neongreen);
+  /* transition-duration: 0.3s; */
+}

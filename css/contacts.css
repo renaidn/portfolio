@@ -1,0 +1,89 @@
+#contacts_window {
+    width: 450px;
+    height: 280px;
+    background-color: var(--windowcontrol);
+    position: absolute;
+    top: 458px;
+    left: 880px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts_content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: var(--windowcontent);
+    /* margin: auto; */
+}
+
+.contacts_icon {
+    /* background-color: var(--lightblue); */
+    background-image: url('/images/adina_pixel.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 16px;
+    width: 150px;
+    height: 210px;
+    margin: auto;
+}
+
+.contacts_text-block {
+    width: 60%;
+    height: 210px;
+    /* padding: 19.5px; */
+    margin: auto;
+    background-color: var(--windowcontent);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#contacts_text-name {
+    font-size: 24px;
+    font-family: 'akira';
+    color: white;
+    text-shadow: 2px 1px 0px var(--brightpurple);
+}
+
+#contacts_text-web {
+    bottom: 0;
+}
+
+#contacts_text-email {
+    width: 180px;
+    margin: 10px 0;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 4px 8px;
+    background-color: var(--neongreen);
+    color: rgb(11, 111, 0);
+    /* text-align: center; */
+    margin: auto;
+}
+
+#contacts_text-email:hover {
+    background-color: #d7ffe2;
+    /* font-weight: 800; */
+    border: 1px solid var(--neongreen);
+    transition-duration: 0.3s;
+  }
+
+#contacts_text-education {
+    font-weight: bold;
+}
+
+/* #contacts_text-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+
+.contacts_content-div {
+    display: flex;
+    flex-direction: column;
+}

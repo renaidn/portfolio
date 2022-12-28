@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/JavaScript"
+      src="https://momentjs.com/downloads/moment-with-locales.js"
+    ></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/nav_low.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
+    <link rel="stylesheet" href="/css/work.css" />
+    <link rel="stylesheet" href="/css/contacts.css" />
+    <link rel="stylesheet" href="/css/download.css" />
+
+    <title>portfolio</title>
+  </head>
+  <body>
+    <div id="nav_top">
+      <ul>
+        <li class="time" id="clock_display"></li>
+        <li class="time" id="date_display"></li>
+        <li class="nav_top-icons button soundOn" id="volume_display" onclick="volumeToggle()">
+          <a href="#"><img id="volume_icon" src="/images/volume_icon.png" /></a>
+        </li>
+        <li class="nav_top-icons button" id="linkedin_icon">
+          <a href="https://www.linkedin.com/in/adina-maratkyzy-0b6b8b1a5" target="_blank"><img src="/images/linkedin_icon.png" /></a>
+        </li>
+        <!-- <li class="nav_top-icons" id="call_icon">
+          <a href="#"><img src="icons/icon_call.svg" /></a>
+        </li> -->
+        <li class="nav_top-icons button" id="mail_icon">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=adina.renaidn@gmail.com" target="_blank"><img src="/images/email_icon.png" /></a>
+        </li>
+      </ul>
+    </div>
+    <!-- <div id="volume_window">
+      <input type="range" min="1" max="100" value="50" class="slider" />
+    </div> -->
+    <div id="working_space">
+      <div id="nav_main">
+        <div class="folders">
+          <div
+            class="folder_icons button"
+            id="about_folder-icon"
+            onclick="openWindow('about')"
+          ></div>
+          <span onclick="openWindow('about')">about</span>
+        </div>
+        <div class="folders">
+          <div
+            class="folder_icons button"
+            id="work_folder-icon"
+            onclick="openWindow('work')"
+          ></div>
+          <span onclick="openWindow(work)">work</span>
+        </div>
+        <!-- <div class="folders">
+          <div
+            class="folder_icons"
+            id="projects_folder-icon"
+            onclick="openWindow('projects')"
+          ></div>
+          <span onclick="openWindow(projects)">projects</span>
+        </div> -->
+        <div class="folders">
+          <a href="Adina_Maratkyzy_CV_dec22.pdf" download>
+            <div
+              class="folder_icons button"
+              id="download_folder-icon"
+              onclick="openWindow('downloadCV')"
+            ></div>
+            <span onclick="openWindow(downloadCV)" style="color: black"
+              >download CV</span
+            >
+          </a>
+        </div>
+        <div class="folders">
+          <div
+            class="folder_icons button" 
+            id="contacts_folder-icon"
+            onclick="openWindow('contacts')"
+          ></div>
+          <span onclick="openWindow(contacts)">contacts</span>
+        </div>
+      </div>
+      <div
+        id="about_window"
+        onclick="bring_on_top(0)"
+        onmousedown="bring_on_top(0)"
+        class="window visible"
+      >
+        <div class="about_fixed">
+          <div class="window_control">
+            <button
+            class="button"
+              id="close_window-btn"
+              onclick="openWindow('about')"
+            ></button>
+            <!-- <div id="min_window-btn"></div> -->
+          </div>
+          <div class="about_icon"></div>
+          <div class="about_fixed-text">
+            <p id="username">Adina Maratkyzy</p>
+            <p>UX | Product Design</p>
+            <p>NYU'24</p>
+            <form method="get" action="Adina_Maratkyzy_CV_dec22.pdf" target="_blank">
+              <button type="submit" id="about_download-btn" class="button">download CV</button>
+            </form>
+          </div>
+        </div>
+        <div class="window_temp" id="about_temp">
+          <ul class="nav_horizontal">
+            <!-- <li>about</li> -->
+            <li class="nav_horizontal-item active button" onclick="openTab(0)">
+              general
+            </li>
+            <li class="nav_horizontal-item button" onclick="openTab(1)">interests</li>
+            <!-- <li class="nav_horizontal-item button" onclick="openTab(2)">skills</li> -->
+          </ul>
+          <div class="about_content">
+            <div id="about_general" class="display_none display_block">
+              <p style="font-size:20px; color:rgb(234, 167, 230); font-family:'lemonmilk'; 
+              ">
+                Hello and welcome to my portfolio! 
+                <br><br>
+              </p>
+              <p>
+                <!-- <br><br> -->
+                My name is Adina and I am currently a junior at 
+                NYU Abu Dhabi majoring in Interactive Media and
+                minoring in Psychology and Sound & Music
+                Computing. Although I am still in the early stages 
+                of my UX design journey, I am passionate about 
+                learning and creating user-centered designs that 
+                prioritize usability and accessibility.
+                <br><br>
+                I have always been interested in technology and 
+                design, and I am excited to combine these 
+                interests in my studies and future career as a UX 
+                designer. I am actively seeking opportunities to
+                 gain hands-on experience and build my skills in 
+                 the field, including participating in design 
+                 thinking workshops and internships.
+                <br><br>
+                Through my coursework and extracurricular 
+                activities, I have gained a strong foundation in 
+                building low and high fidelity wireframes, front 
+                end web development, sound and graphic design, 
+                and am constantly seeking to expand my 
+                knowledge and skills in the field. I am eager to 
+                apply what I have learned and continue learning 
+                in real-world projects and situations.
+                <!-- <br><br> -->
+                <!-- Thank you for visiting my portfolio. While it is still 
+                a work in progress, I hope you enjoy exploring my 
+                work and learning more about my design process. 
+                Please don't hesitate to contact me if you have
+                any questions or if you'd like to discuss a potential 
+                project. -->
+
+                <!-- I am have great interest crafting optimal solutions and dynamic
+                user experience I have some experience in the fields of
+                front-end web development, branding and marketing, design
+                (logotypes, posters, invites), video editing, and space
+                management. My special interest lies in accessibility design
+                research, on which I will be focusing in my capstone project. My
+                other interests include sound design and computing, woodworking,
+                3D printing, collaging, baking, and travelling!
+                sound design / woodworking / ice skating / collaging / baking /
+                rock climbing / travel / journaling -->
+              </p>
+            </div>
+            <div id="about_interests" class="display_none">
+              <p style="font-size:16px; margin-bottom:8px; color:rgb(234, 167, 230);">in my free time I enjoy...</p>
+              <!-- <br> -->
+              <p>
+                <span class="about_spans" onmouseover="spanHover()" onmouseout="spanHoverNot()">sound design</span> | 
+                <span class="about_spans" onmouseover="spanHover()" onmouseout="spanHoverNot()">woodworking</span> | <br>
+                <span class="about_spans" onmouseover="spanHover()" onmouseout="spanHoverNot()">ice skating</span> | 
+                <span class="about_spans" onmouseover="spanHover()" onmouseout="spanHoverNot()">collaging</span> | 
+                <span class="about_spans" onmouseover="spanHover()" onmouseout="spanHoverNot()">baking</span> |
+                <span class="about_spans" onmouseover="spanHover()" onmouseout="spanHoverNot()">rock climbing</span> |
+                <span class="about_spans" onmouseover="spanHover()" onmouseout="spanHoverNot()">dogs</span> |
+                <span class="about_spans" onmouseover="spanHover()" onmouseout="spanHoverNot()">travel</span> | <br>
+                <span class="about_spans" onmouseover="spanHover()" onmouseout="spanHoverNot()">journaling</span> |
+                <span class="about_spans" onmouseover="spanHover()" onmouseout="spanHoverNot()">fruits</span> |
+                <span class="about_spans" onmouseover="spanHover()" onmouseout="spanHoverNot()">drawing</span>
+              </p>
+            </div>
+            <!-- <div id="about_skills" class="display_none">
+              <div id="skills_overview">i have some experience with...</div>
+              <div id="skills_name">
+                <p onclick="rateSkills(5)">Adobe creative cloud 3d max</p>
+                <p onclick="rateSkills(3)">Adobe creative cloud 3d max</p>
+              </div>
+              <div id="skills_score">
+                <span class="material-symbols-outlined">
+                  star
+                </span>
+                <span class="material-symbols-outlined">
+                  star
+                </span>
+                <span class="material-symbols-outlined">
+                  star
+                </span>
+                <span class="material-symbols-outlined">
+                  star
+                </span>
+                <span class="material-symbols-outlined">
+                  star
+                </span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div
+        id="work_window"
+        onclick="bring_on_top(1)"
+        onmousedown="bring_on_top(1)"
+        class="window"
+      >
+        <div class="work_fixed">
+          <div class="window_control work_window_control">
+            <button class="button" id="close_window-btn" onclick="openWindow('work')"></button>
+            <!-- <div id="min_window-btn"></div> -->
+          </div>
+          <div id="work_nav">
+            <ul class="nav_text"></ul>
+          </div>
+        </div>
+        <div class="window_temp" id="work_temp">
+          <div class="nav_horizontal">
+            <p id="breadcrumbs" class="button">
+              <span id="work_bread" onclick="openSection('general')">work</span>
+              <span id="inside_bread"></span>
+            </p>
+          </div>
+          <div
+            class="work_content display_none display_block"
+            id="work_general_content"
+          >
+            <!-- <div class="work_section">
+                <p class="work_section-head">favorites</p>
+                <div class="work_subsections">
+                  <div class="folder">
+                    <p class="folder_head">recents</p>
+                    <div class="folder_icon"></div>
+                    <p class="folder_description">this is a description of a folder, i need to come up with those asap...</p>
+                  </div>
+                  <div class="folder">
+                    <p class="folder_head">downloads</p>
+                    <div class="folder_icon"></div>
+                    <p class="folder_description">this is a description of a folder, i need to come up with those asap...</p>
+                  </div>
+                </div>
+            </div> -->
+            <div class="work_section">
+              <p class="work_section-head">UX/UI</p>
+              <div class="work_subsections">
+                <div
+                  class="folder button"
+                  id="notparkour_folder"
+                  onclick="openSection('notparkour')"
+                >
+                  <p class="folder_head">NotParkour</p>
+                  <div class="folder_icon"></div>
+                  <p class="folder_description">
+                    An arcade style 2 player collaborative online game.
+                  </p>
+                </div>
+                <div
+                  class="folder button"
+                  id="asrm_folder"
+                  onclick="openSection('asrm')"
+                >
+                  <p class="folder_head">ASRM</p>
+                  <div class="folder_icon"></div>
+                  <p class="folder_description">
+                    A website for an Association for Specialists in Respiratory Medicine
+                    of Kazakhstan.
+                  </p>
+                </div>
+                <div
+                  class="folder button"
+                  id="crayoladraw_folder"
+                  onclick="openSection('crayoladraw')"
+                >
+                  <p class="folder_head">CrayolaDraw</p>
+                  <div class="folder_icon"></div>
+                  <p class="folder_description">
+                    A webpage that pays tribute to original crayola crayon
+                    colors.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="work_section">
+              <p class="work_section-head">Logo Design</p>
+              <div class="work_subsections">
+                <div
+                  class="folder button"
+                  id="cair_folder"
+                  onclick="openSection('cair')"
+                >
+                  <p class="folder_head">CAIR</p>
+                  <div class="folder_icon"></div>
+                  <p class="folder_description">
+                    A brand identity for a research Center for AI and Robotics
+                    at NYU Abu Dhabi.
+                  </p>
+                </div>
+                <div
+                  class="folder button"
+                  id="cosimo_folder"
+                  onclick="openSection('cosimo')"
+                >
+                  <p class="folder_head">Cosimo</p>
+                  <div class="folder_icon"></div>
+                  <p class="folder_description">
+                    A logo for Italian streetswear brand based in London.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="work_section">
+              <p class="work_section-head">Illustrations</p>
+              <div class="work_subsections">
+                <div
+                  class="folder button"
+                  id="posters_folder"
+                  onclick="openSection('posters')"
+                >
+                  <p class="folder_head">Posters</p>
+                  <div class="folder_icon"></div>
+                  <p class="folder_description">
+                    A collection of marketing posters done for different
+                    projects.
+                  </p>
+                </div>
+                <div
+                  class="folder button"
+                  id="digitalart_folder"
+                  onclick="openSection('digitalart')"
+                >
+                  <p class="folder_head">Digital Art</p>
+                  <div class="folder_icon"></div>
+                  <p class="folder_description">
+                    A collection of digital art done for personal use.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="work_content display_none" id="notparkour_content">
+            <!-- <h1>NotParkour</h1> -->
+            <div class="content_header">
+              <div class="header_image button" id="header_image-notparkour"></div>
+              <div class="content_overview">
+                <h1 class="overview_title">NotParkour</h1>
+                <p class="overview_goal">
+                  <mark>overview:</mark> a 2 player browser game done for the
+                  class on connected interactive applications taken in spring
+                  '22.
+                </p>
+                <p class="overview_role">
+                  <mark>my role:</mark> UX/UI designer, web developer
+                </p>
+                <p class="overview_stacks">
+                  <mark>tools:</mark> <u>Adobe Illustrator</u>, <u>p5.js</u>,
+                  <u>sockets.io</u>, <u>node.js</u>, <u>express.js</u>
+                </p>
+              </div>
+            </div>
+            <div class="content_main">
+              <fieldset class="information_boxes">
+                <legend>a bit of the background story</legend>
+                <p>
+                  For this project me and my friend teamed up to make a game
+                  inspired by many collaborative games we have played together
+                  (It Takes Two, A Way Out, Pico Park). The game we were looking
+                  to make was a two player game, where players would be required
+                  to work as a team to clear a level.
+                </p>
+              </fieldset>
+              <fieldset class="information_boxes">
+                <legend>project goal</legend>
+                <p>
+                  To create a multiplayer browser game that would encourage
+                  active collaboration and team play in an intertaining format.
+                </p>
+              </fieldset>
+              <fieldset class="information_boxes">
+                <legend>game concept</legend>
+                <p>
+                  Not Parkour is an arcade style collaborative 2 player game.
+                  Levels are structured in such way that players won't be able
+                  to complete the level on their own. Players can either create
+                  the room or join one, where they will be assigned a character
+                  at random. Each of the characters have their own special
+                  ability. Agash is a tree that jumps high. Kyzyl is a mushroom
+                  with a very bouncy hat that can be used as a trampoline by
+                  Agash. They join their forces to collect the keys and escape
+                  from the dark castle.
+                </p>
+              </fieldset>
+              <fieldset class="information_boxes">
+                <legend>Initial steps</legend>
+                <p>
+                  We have started from building a basic grid (map) to store the
+                  information about the placement of the game blocks. We then
+                  added a square (the player character), which moved with WASD
+                  and spacebar, added the gravity, and some collision functions.
+                  Collisions were a bit tricky to handle. It took a bunch of for
+                  loops and if statements. For some reason, lower boundary of
+                  the game blocks did not work and the user would go through
+                  them whenever they jumped below a block.
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/notparkour/initial_steps.png" />
+              <fieldset class="information_boxes">
+                <legend>why pixel art?</legend>
+                <p>
+                  For the design, we initially considered staying with the grid
+                  style adapted from our sketches. However, we have quickly
+                  realized that lack of character could potentially make it
+                  harder for the user to connect with their game character. We
+                  needed to come up with a user friendly design that would feel
+                  inviting and in a way traditional for web games. For this
+                  purpose, pixel art style felt like a great choice. It's
+                  deceivingly simple looking style makes its viewers believe
+                  that the game must be just as simple. Pixel art is pretty
+                  concise, yet detailed enough to give the game some character.
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/notparkour/why_pixel_art.png" />
+              <fieldset class="information_boxes">
+                <legend>designing every block</legend>
+                <p>
+                  I was fully in charge of the game design. To make each of the
+                  blocks needed for the game I have used Adobe Illustrator. This
+                  project marks my first attempt at pixel art. After some tries
+                  and errors, I have settled on 24*24 grid, which felt like I
+                  could add the just right amount of details to make block
+                  features recongizable, yet not oversaturated with details. I
+                  had fun with this step and found the process to be quite
+                  therapeutic.
+                </p>
+              </fieldset>
+              <img
+                src="/images/work_folders/notparkour/designing_every_block.png"
+              />
+              <fieldset class="information_boxes">
+                <legend>what makes a game?</legend>
+                <p>
+                  As we have finished working on level designs and the main game
+                  logic, we have moved onto an important question: "What makes a
+                  gaming experience?". We wanted to create an experience that
+                  would feel well-thought-out to the users. That required some
+                  careful research and planning on our end. After all, we only
+                  had a month to bring our game to life. After some
+                  consideration, we have identified pause screen, game server
+                  window, a waiting room, and appropriate sound effects to be
+                  important additions to the game. I have designed those
+                  elements and spaces, while Shyngys added necessary code for
+                  those elements to function properly. Adding sound to the game
+                  was important for me, because I believe that sound is a
+                  powerful tool. It is relatively simple but extremely effective
+                  way of making a piece feel more thoughtful and impactful.
+                  Incorporation of these aforementioned elements allowed the
+                  game to feel more full-fledged and finished.
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/notparkour/pause_window.png" />
+              <img src="/images/work_folders/notparkour/waiting_area.png" />
+              <img src="/images/work_folders/notparkour/win_window.png" />
+              <fieldset class="information_boxes">
+                <legend>my takeaways</legend>
+                <p>
+                  Working on this project I was once again reminded of the
+                  importance of team-work and active communication. This and
+                  planning ahead have made this game possible! I have discovered
+                  the beauty of pixel art through this project and as you may
+                  have noticed from my portfolio carried this style into my
+                  personal identity. I am proud of our final product and am
+                  looking forward to creating more interactive web applications!
+                </p>
+              </fieldset>
+            </div>
+          </div>
+          <div class="work_content display_none" id="asrm_content">
+            <div class="content_header">
+              <div class="header_image button" id="header_image-asrm"></div>
+              <div class="content_overview">
+                <h1 class="overview_title">ASRM</h1>
+                <p class="overview_goal">
+                  <mark>overview:</mark> a membership website ordered by a
+                  government sponsored medical association of Kazakhstan.
+                </p>
+                <p class="overview_role">
+                  <mark>role in the team:</mark> UX/UI designer
+                </p>
+                <p class="overview_stacks">
+                  <mark>timeframe:</mark> 2 months (summer '22)
+                </p>
+                <p class="overview_stacks">
+                  <mark>apps used:</mark> <u>Adobe XD</u>, <u>Figma</u>
+                </p>
+              </div>
+            </div>
+            <div class="content_main">
+              <fieldset class="information_boxes">
+                <legend>Problem Statement</legend>
+                <p>
+                  The ASRM of Kazakhstan were in need of a space where they
+                  could share relevant news in the field, announce upcoming
+                  events, and document past events to connect the experts and
+                  build a sense of community.
+                </p>
+              </fieldset>
+              <fieldset class="information_boxes">
+                <legend>Project goal</legend>
+                <p>
+                  To create a membership website that would assist in building a
+                  connected community through active exchange of information.
+                </p>
+              </fieldset>
+              <fieldset class="information_boxes">
+                <legend>My role in the team</legend>
+                <p>
+                  I have been working as a UX designer alongside 2 front-end and 2 back-end developers. 
+                  My role was to produce high fidelity wireframes for desktop and mobile versions of the 
+                  website based on references and requirements provided by the organization. These were 
+                  mostly guidlines regarding the information, functionality, and pages that were needed 
+                  to be included in the website.
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/asrm/indexes.png"/>
+              <fieldset class="information_boxes">
+                <legend>demolition and cleanup</legend>
+                <p>
+                  I have joined the project almost a month after the project have started, so there 
+                  already was a foundation of the website by the time I have joined. Since we were tight 
+                  on the deadline, I have decided that the best decision would be building upon elements 
+                  that already exist. <br><br>
+                  I have worked on identifying the issues with existing design and focused on resolving 
+                  them. The main issue was the lack of consistency in each elements individually and as a
+                  part of the bigger group. On the landing pages alone there were 16 different font sizes.
+                  In my wireframes I have specified all of the measurements and sticked to the 8 point
+                  grid and limited the font sizes to 3 max. This along has brought significant improvement 
+                  to the website.
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/asrm/news.png"/>
+              <img src="/images/work_folders/asrm/login.png"/>
+              <fieldset class="information_boxes">
+                <legend>decisions made, reasons given</legend>
+                <p>
+                  I have settled on the blue and white color palette with orange as an accent color. This 
+                  has given the website a traditionally
+                  "medical" look that is recongizable at a first sight. I have tried making the website
+                  elements as easy to navigate as possible, because the target audience of the website
+                  ranges from 30 to 65 years old. From my personal experience, these age groups do 
+                  experience difficulties navigating non-traditional websites. In this project, creative
+                  approach to element design, website layout, and user interactions would not be suitable
+                  for the target audience and the purposes of the website. Comfortable and intuitive are the
+                  adjectives that best describe the experience that I was looking to create. 
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/asrm/mobile.png"/>
+              <fieldset class="information_boxes">
+                <legend>looking back and going forward</legend>
+                <p>
+                  Since I have joined the project later
+                  than others, I have missed out on initial communication with the client, which I 
+                  personally find very important, and which could potentially expedite the design process as
+                  I would have a better understanding of client's wishes and wants.
+                  I have communicated closely with the developers, which helped me 
+                  understand my designs and choices better.
+                  Overall,his project have taught me acting fast in situations of crisis and quickly adapting to 
+                  the unexpected changes. 
+                </p>
+              </fieldset>
+            </div>
+          </div>
+          <div class="work_content display_none" id="crayoladraw_content">
+            <div class="content_header">
+              <div class="header_image button" id="header_image-crayoladraw"></div>
+              <div class="content_overview">
+                <h1 class="overview_title">CrayolaDraw</h1>
+                <p class="overview_goal">
+                  <mark>overview:</mark> interactive drawing website featuring
+                  crayola colors done for the
+                  class on connected interactive applications taken in spring
+                  '22.
+                </p>
+                <!-- <p class="overview_role">
+                  <mark>role in the team:</mark> UX/UI designer
+                </p> -->
+                <p class="overview_stacks">
+                  <mark>tools:</mark> <u>HTML</u>, <u>CSS</u>, <u>JavaScript</u>, <u>p5.js</u>
+                </p>
+              </div>
+            </div>
+            <div class="content_main">
+              <fieldset class="information_boxes">
+                <legend>why crayola</legend>
+                <p>
+                  One of the requirements for this project was actively using the data fetched from 
+                  a json file of my choice. I have chosen a list of crayola standard colors because
+                  I have always found them to have a nostalgic appeal, which makes them less intimidating
+                  and actually quite inviting to use. This has led me to my project proposal.
+                </p>
+              </fieldset>
+              <fieldset class="information_boxes">
+                <legend>motivation behind the idea</legend>
+                <p>
+                  I wanted to create a wholesome online drawing experience for those who can't 
+                  use special professional drawing programs but want to start exploring digital 
+                  drawing. <br> <br>
+                  Middle school me would have been happy to find a program of this kind, because 
+                  my laptop wasn't powerful enough to support graphic softwares, but I had a deep 
+                  interest in digital art. Even though online drawing websites frequently have a 
+                  rather limited functionality, it was a great starting point for me to pursue my 
+                  interest and familiarize myself with a tricky drawing-with-your-mouse experience.
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/crayoladraw/wireframe.png"/>
+              <fieldset class="information_boxes">
+                <legend>functionality included</legend>
+                <p>
+                  The website includes all the essentials for a beginner friendly first experience
+                  with digital drawing tools. I have kept the number of tools and icons minimal as to
+                  not overwhelm a first-time user.<br><br>
+
+                  That being said, CrayolaDraw includes such functions, as: <ul>
+                    <li>Drawing on canvas using three different brushes;</li>
+                    <li>Changing stroke size using a slider under the canvas;</li>
+                    <li>Choosing the color of the stroke from the provided palette;</li>
+                    <li>Copying hex of the currently used color;</li>
+                    <li>Clearing the canvas;</li>
+                    <li>Changing canvas orientation (portrait / landscape);</li>
+                    <li>Changing the size of the canvas;</li>
+                    <li>Saving canvas on your device as a jpg file;</li>
+                  </ul>
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/crayoladraw/first_draft.png"/>
+              <img src="/images/work_folders/crayoladraw/second_draft.png"/>
+              <img src="/images/work_folders/crayoladraw/third_draft.png"/>
+              <img src="/images/work_folders/crayoladraw/final_ver.png"/>
+              <fieldset class="information_boxes">
+                <legend>design changes</legend>
+                <p>
+                  As I have added all of the envisioned functionality to the page, I have realized
+                  that there are better ways of organizing and presenting those functions. I have worked
+                  on finding a balance between representing crayola colors and providing an
+                  uncompromised drawing experience. I have made sure that every element on display is
+                  self-explanatory and functional. While two icons have dropdown menus on hover (canvas 
+                  size, canvas orientation), I have decided put out all of the brushes options directly
+                  on display for the user to be aware of all of the tools options present.
+                </p>
+              </fieldset>
+            </div>
+          </div>
+          <div class="work_content display_none" id="cair_content">
+            <div class="content_header">
+              <div class="header_image button" id="header_image-cair"></div>
+              <div class="content_overview">
+                <h1 class="overview_title">CAIR</h1>
+                <p class="overview_goal">
+                  <mark>overview:</mark> a winning logo identity for a university 
+                  research center at NYU Abu Dhabi chosen out of 3 final proposals.
+                </p>
+                <!-- <p class="overview_role">
+                  <mark>role in the team:</mark> UX/UI designer
+                </p> -->
+                <p class="overview_stacks">
+                  <mark>tools:</mark> <u>Adobe Illustrator</u>, <u>Adobe Photoshop</u>
+                </p>
+              </div>
+            </div>
+            <div class="content_main">
+              <fieldset class="information_boxes">
+                <legend>starting point and general direction</legend>
+                <p>
+                  I decided to explore the human / robot relationships through this identity. 
+                  Specifically, I wanted this design to communicate the unique connection, the 
+                  incredible exchange of information, and the productivity of these relationships, 
+                  while also remembering about the fundamental differences between the humans and 
+                  the robots, all of this delivered through one visual identity.  
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/cair/concept.png"/>
+              <fieldset class="information_boxes">
+                <legend>the centerpiece and the concept</legend>
+                <p>
+                  Setting this ambitious goal, my starting point was the imagery of a handshake. 
+                  An almost universal gesture of positive and welcoming interaction. So incredibly 
+                  overused, but at the same time so very fitting for our goals. At first, I was 
+                  hesitant about using this gesture, however this hesitation was gone after I 
+                  stumbled upon Michelangelo’s “creation of Adam”. The iconic fingers reaching for 
+                  each other. We can almost see an electric spark glimmering there. Beautiful and 
+                  very inspiring moment.
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/cair/michelangelo.png"/>
+              <fieldset class="information_boxes">
+                <legend>approaching it as a logo designer</legend>
+                <p>
+                  I am not a painter nor a photographer. I am a logo designer, who have shapes and 
+                  colors as our tools. And I gladly utilized these tools in my sketches. I have 
+                  started from detailed images and reduced the amount of details till I was able 
+                  to catch this beautiful moment of connection. The robot hand finally meets the 
+                  human hand and at the intersection of the handshake something new is being 
+                  created.
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/cair/twocolor.png"/>
+              <fieldset class="information_boxes">
+                <legend>accessibility question</legend>
+                <p>
+                  As the shapes in this design are abstract and minimal, the color scheme plays an 
+                  essential role in highlighting the intersection of two hands and hence is key to 
+                  the successful communication of its idea. For this reason, I found it important to
+                  address the design accessibility, specifically color blindness friendly palettes,
+                  in this logo design. Below are a few design iterations that I have came up with
+                  after learning more about most common types of color blindness and experimenting 
+                  with high contrast color pairings.
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/cair/iterations.png"/>
+              <fieldset class="information_boxes">
+                <legend>logo in usage</legend>
+                <p>
+                  Further you can see the mockups that demonstrate how well and clear the logo reads 
+                  on objects of any size.
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/cair/handshake_card_ver1.png"/>
+              <img src="/images/work_folders/cair/handshake_stationary.png"/>
+              <img src="/images/work_folders/cair/handshake_web.png"/>
+              <img src="/images/work_folders/cair/handshake_stand_banner.png"/>
+              <img src="/images/work_folders/cair/handshake_poster (1).png"/>
+              <img src="/images/work_folders/cair/handshake_tote.png"/>
+            </div>
+          </div>
+          <div class="work_content display_none" id="cosimo_content">
+            <div class="content_header">
+              <div class="header_image button" id="header_image-cosimo"></div>
+              <div class="content_overview">
+                <h1 class="overview_title">COSIMO</h1>
+                <p class="overview_goal">
+                  <mark>overview:</mark> a logo proposal for a London based streetswear
+                  done for an immersive studio course in graphic design that combines 
+                  practice and reflection through a project- based approach to branding.
+                </p>
+                <!-- <p class="overview_role">
+                  <mark>role in the team:</mark> UX/UI designer
+                </p> -->
+                <p class="overview_stacks">
+                  <mark>tools:</mark> <u>Adobe Illustrator</u>
+                </p>
+              </div>
+            </div>
+            <div class="content_main">
+              <fieldset class="information_boxes">
+                <legend>about the client</legend>
+                <p>
+                  Cosimo is a clothing brand by Cosimo Ippolito based in London with a DNA of Italian 
+                  craftsmanship. The brand's motto positions it in a circular way, “stories beyond 
+                  design, design beyond stories”. It takes pride in it's sewing technique, aguglia,
+                  which translates as the "garfish" or the "sea needle" from Italian language.
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/cosimo/sketches.png"/>
+              <fieldset class="information_boxes">
+                <legend>design specifications to take into account</legend>
+                <p>
+                  The few concepts that I want my logo proposal to focus on are sewing and aguglia. I
+                  find these two to be the unique selling points integral tothe brand identity of 
+                  Cosimo. I also need to keep in mind that Cosimo is a clothing brand, so the final 
+                  design must look like clear and recognizable on the clothes.
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/cosimo/iterations.png"/>
+              <fieldset class="information_boxes">
+                <legend>design direction and possible options</legend>
+                <p>
+                  Above you can see some of the possible design proposal for the logo. In all of my 
+                  designs, I have used the long and sleek shape of the aguglia fish to make a letter ‘C’. I 
+                  then played with the angles and the widths to create some variations of this design. 
+                  <br><br>
+                  As you can see, the two designs in the left column have an additional detail to make them 
+                  resemble the needle eye. This way I am communicating both concepts: aguglia, and sewing.
+                  <br><br>
+                  The two designs on their right, on the other hand, only communicate the aguglia fish and 
+                  have the upper part of their edge split into two to make it look like its mouth. I don’t 
+                  favor these two variations, because they are too abstract and resemble a snake more than 
+                  a fish. On the good side, they made me think of brands like Lacoste, PUMA, and Polo Ralph 
+                  Lauren. These clothing brands have various animals illustrated in their logos and I have 
+                  realized that I can do the same. For some reason, I occasionally forget that minimalism and 
+                  abstraction are not the only ways to go for in a design. With this in mind, I have came up
+                  with the image of detailed but not too much aguglia and presented it as the final logo 
+                  proposal. 
+                </p>
+              </fieldset>
+              <img src="/images/work_folders/cosimo/final_ver.png"/>
+              <fieldset class="information_boxes">
+                <legend>final thoughts</legend>
+                <p>
+                  I actually am happy with the way this design turned out. I think it would have looked good 
+                  as an embroidery and perhaps there are a way of transforming it into a seamless monogram.
+                  I would have explored more presentation options if we were given more time to actually
+                  work on and develop our proposal before presenting them.
+                </p>
+              </fieldset>
+            </div>
+          </div>
+          <!-- <div class="work_content display_none" id="posters_content">
+            <h1>Posters</h1>
+          </div>
+          <div class="work_content display_none" id="digitalart_content">
+            <h1>Digital Art</h1>
+          </div> -->
+        </div>
+      </div>
+      <div
+        id="contacts_window"
+        onclick="bring_on_top(2)"
+        onmousedown="bring_on_top(2)"
+        class="window visible"
+      >
+        <div class="window_control contacts_window_control">
+          <div class="close_window-div">
+            <button
+            class="button"
+              id="close_window-btn"
+              onclick="openWindow('contacts')"
+            ></button>
+          </div>
+          <span>contacts</span>
+        </div>
+        <div class="contacts_content">
+          <div class="contacts_icon"></div>
+          <div class="contacts_text-block">
+            <div class="contacts_content-div">
+              <span id="contacts_text-profession">UX/UI design</span>
+            </div>
+            <div class="contacts_content-div">
+              <span id="contacts_text-name">Adina Maratkyzy</span>
+              <span id="contacts_text-education"
+                >Junior at New York University</span
+              >
+            </div>
+            <div class="contacts_content-div">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=adina.renaidn@gmail.com" target="_blank">
+                <button type="submit" class="button" id="contacts_text-email">
+                  adina.renaidn@gmail.com
+                </button>
+              </a>
+              <!-- <span id="contacts_text-email"><a href="">am10567@nyu.edu</a></span> -->
+              <span id="contacts_text-web"
+                ><a href="" style="color: black">website.com</a></span
+              >
+            </div>
+            <!-- <div id="contacts_text-phone">
+              <span id="phone_us">+19295949701</span>
+              <span id="phone_kz">+77759511922</span>
+              <span id="phone_uae">+971563331564</span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+  <script src="work_window_control.js"></script>
+  <script src="contacts_window_control.js"></script>
+  <script src="about_window_control.js"></script>
+  <script src="nav_elements.js"></script>
+</html>

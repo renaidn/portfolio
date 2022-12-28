@@ -1,0 +1,105 @@
+#nav_low {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 36px;
+    /* z-index: 1000; */
+  }
+  
+  #nav_stand {
+    width: 80%;
+    height: 64px;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    border: 1px solid black;
+    background: #f6f4f9;
+    transform: perspective(10px) rotateX(1deg);
+    margin-bottom: 8px;
+  }
+  
+  #stand_items {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    /* margin: 64px 0; */
+  }
+  
+  .nav_icon {
+    width: 96px;
+    height: 96px;
+    /* align-self: center; */
+    border-radius: 56px;
+    /* background-color: green; */
+    border: 1px solid black;
+    margin: 0 64px 32px 64px;
+  }
+  
+  .nav_icon:nth-child(1) {
+    margin-left: 216px;
+    align-self: center;
+  }
+  
+  .nav_icon:nth-child(5) {
+    margin-right: 216px;
+  }
+  
+  #nav_icon-about {
+    background-image: url(/icons/nav_down/about.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #nav_icon-about:hover {
+    background-image: url(/icons/nav_down/gifs/about.gif);
+    transition-duration: 0.3s;
+  }
+  
+  #nav_icon-works {
+    background-image: url(/icons/nav_down/works.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #nav_icon-works:hover {
+    background-image: url(/icons/nav_down/gifs/works.gif);
+    transition-duration: 0.3s;
+  }
+  
+  #nav_icon-projects {
+    background-image: url(/icons/nav_down/projects.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #nav_icon-projects:hover {
+    background-image: url(/icons/nav_down/gifs/projects.gif);
+    transition-duration: 0.3s;
+  }
+  
+  
+  #nav1 {
+    /* animation: hovericons 1s linear infinite; */
+    position: absolute;
+    transform-origin: 50%;
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+  
+  #nav1:hover {
+    /* transform: rotate(10deg); */
+    animation: spin 5s linear infinite;
+    transition: all 1s ease;
+    transition: all 1s ease;
+  
+    position: absolute;
+    left: 0;
+  }
