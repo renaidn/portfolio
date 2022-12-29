@@ -20,7 +20,7 @@
 
 .contacts_icon {
     /* background-color: var(--lightblue); */
-    background-image: url('/images/adina_pixel.png');
+    background-image: url('./images/adina_pixel.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -51,10 +51,20 @@
 
 #contacts_text-web {
     bottom: 0;
+    padding-top: 8px;
+    /* transition-duration: 0.3s; */
+}
+
+#contacts_text-web a {
+    color: black;
+}
+
+#contacts_text-web a:hover {
+    color: var(--neongreen);
 }
 
 #contacts_text-email {
-    width: 180px;
+    width: 210px;
     margin: 10px 0;
     text-decoration: none;
     border: 1px solid black;

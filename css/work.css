@@ -182,35 +182,35 @@
 }
 
 #notparkour_folder .folder_icon {
-  background-image: url(/images/work_folders/notparkour/notparkour_folder-icon.png);
+  background-image: url(./images/work_folders/notparkour/notparkour_folder-icon.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #asrm_folder .folder_icon {
-  background-image: url(/images/work_folders/asrm/asrm_folder-icon.png);
+  background-image: url(./images/work_folders/asrm/asrm_folder-icon.png);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #crayoladraw_folder .folder_icon {
-  background-image: url(/images/work_folders/crayoladraw/crayoladraw_folder-icon.png);
+  background-image: url(./images/work_folders/crayoladraw/crayoladraw_folder-icon.png);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #cair_folder .folder_icon {
-  background-image: url(/images/work_folders/cair/cair_folder-icon.png);
+  background-image: url(./images/work_folders/cair/cair_folder-icon.png);
   background-position: center;
   background-size: 110%;
   background-repeat: no-repeat;
 }
 
 #cosimo_folder .folder_icon {
-  background-image: url(/images/work_folders/cosimo/cosimo_folder-icon.png);
+  background-image: url(./images/work_folders/cosimo/cosimo_folder-icon.png);
   background-color: white;
   background-position: center;
   background-size: 60%;
@@ -249,34 +249,34 @@
 }
 
 #header_image-notparkour {
-  background-image: url(/images/work_folders/notparkour/notparkour_folder-icon.png);
+  background-image: url(./images/work_folders/notparkour/notparkour_folder-icon.png);
 }
 
 #header_image-asrm {
-  background-image: url(/images/work_folders/asrm/asrm_folder-icon.png);
+  background-image: url(./images/work_folders/asrm/asrm_folder-icon.png);
   background-position: top;
 }
 
 #header_image-crayoladraw {
-  background-image: url(/images/work_folders/crayoladraw/crayoladraw_folder-icon.png);
+  background-image: url(./images/work_folders/crayoladraw/crayoladraw_folder-icon.png);
   background-position: left;
 }
 
 #header_image-cair {
-  background-image: url(/images/work_folders/cair/cair_folder-icon.png);
+  background-image: url(./images/work_folders/cair/cair_folder-icon.png);
 }
 
 #header_image-cosimo {
-  background-image: url(/images/work_folders/cosimo/cosimo_folder-icon.png);
+  background-image: url(./images/work_folders/cosimo/cosimo_folder-icon.png);
   background-size: 90%;
 }
 
 #header_image-posters {
-  background-image: url(/images/work_folders/asrm/asrm_folder-icon.png);
+  background-image: url(./images/work_folders/asrm/asrm_folder-icon.png);
 }
 
 #header_image-digitalart {
-  background-image: url(/images/work_folders/asrm/asrm_folder-icon.png);
+  background-image: url(./images/work_folders/asrm/asrm_folder-icon.png);
 }
 
 .content_overview {
