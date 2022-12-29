@@ -251,13 +251,13 @@ const audioIcon = document.getElementById("volume_icon");
 
 function volumeToggle() {
   if (audioDisplay.classList.contains("soundOn")) {
-    audioIcon.src = "/images/volume_icon_off.png";
+    audioIcon.src = "../images/volume_icon_off.png";
     audioDisplay.classList.remove("soundOn");
     audio.volume = 0;
     console.log("sound is off");
   }
   else {
-    audioIcon.src = "/images/volume_icon.png";
+    audioIcon.src = "../images/volume_icon.png";
     audioDisplay.classList.add("soundOn");
     audio.volume = 1;
     console.log("sound is on");
