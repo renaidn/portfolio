@@ -20,7 +20,7 @@
 
 .contacts_icon {
     /* background-color: var(--lightblue); */
-    background-image: url('./images/adina_pixel.png');
+    background-image: url('../images/adina_pixel.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
