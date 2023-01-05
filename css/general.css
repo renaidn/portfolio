@@ -222,6 +222,16 @@ i {
   text-decoration: none;
 }
 
+#nametag {
+  font-family: "ds-digital";
+  font-size: 20px;
+  padding: 8px 0;
+  /* clear: left; */
+  /* left: 0px; */
+  /* padding-right: 560px; */
+  /* padding-left: 12px; */
+}
+
 .nav_top-icons img {
   height: 24px;
   width: auto;

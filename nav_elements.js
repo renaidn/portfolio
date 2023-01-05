@@ -19,8 +19,8 @@ const name_to_section = {
   CrayolaDraw: "crayoladraw",
   CAIR: "cair",
   Cosimo: "cosimo",
-  // Posters: "posters",
-  // "Digital Art": "digitalart",
+  Posters: "posters",
+  "Digital Art": "digitalart",
 };
 
 const createListItem = (name) => {
@@ -45,7 +45,7 @@ let nav_elements = {
   // Favorites: ["Recents", "Downloads"],
   "UX/UI": ["NOT Parkour", "ASRM", "CrayolaDraw"],
   "Logo Design": ["CAIR", "Cosimo"],
-  // Illustrations: ["Posters", "Digital Art"],
+  Illustrations: ["Posters", "Digital Art"],
 };
 window.onload = () => {
   const nav_list = document.querySelector(".nav_text");
